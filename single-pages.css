@@ -1,0 +1,91 @@
+main {
+  height: 90vh;
+}
+
+.muzeul-satului {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 0;
+  gap: 50px;
+}
+
+main  {
+  gap: 25px !important;
+}
+
+main #inapoi {
+  max-width: fit-content;
+  padding: 20px;
+  border-radius: 150px;
+  border: none;
+  background: black;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.muzeul-satului div:nth-child(1) {
+  width: 50%;
+}
+
+.muzeul-satului div:nth-child(1) img {
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: 15px solid white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.muzeul-satului div:nth-child(2) {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.muzeul-satului div:nth-child(2) a {
+  max-width: fit-content;
+  padding: 10px 20px;
+  border-radius: 150px;
+  border: none;
+  background: black;
+  color: white;
+  font-weight: bold;
+}
+
+
+@media (max-width: 930px) {
+  main {
+    height: auto;
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+  .muzeul-satului {
+    flex-direction: column;
+  }
+  .muzeul-satului div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px 0;
+  }
+
+  .muzeul-satului div:nth-child(1),
+  .muzeul-satului div:nth-child(2) {
+    width: 100%;
+  }
+
+  main #inapoi {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
